@@ -1,9 +1,11 @@
 from fastapi import FastAPI
 import uvicorn
 from model import loan_router
+from diabetes import diabetes_router
 
 app = FastAPI()
 app.include_router(loan_router)
+app.include_router(diabetes_router)
 
 @app.get("/")
 async def root():
