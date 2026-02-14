@@ -3,8 +3,8 @@ from pydantic import BaseModel
 import joblib
 from scipy.constants import astronomical_unit
 
-model = joblib.load('diabetes_model.pkl')
-scaler = joblib.load('diabetes_scaler.pkl')
+model = joblib.load('Diabetes/diabetes_model.pkl')
+scaler = joblib.load('Diabetes/diabetes_scaler.pkl')
 
 
 diabetes_router = APIRouter(prefix="/diabetes", tags=["diabetes"])

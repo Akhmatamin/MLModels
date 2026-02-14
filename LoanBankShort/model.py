@@ -2,8 +2,10 @@ from fastapi import APIRouter
 from pydantic import BaseModel
 import joblib
 
-scaler = joblib.load('scaler_short_loan.pkl')
-model = joblib.load('model_log_short.pkl')
+
+scaler = joblib.load('LoanBankShort/scaler_short_loan.pkl')
+model = joblib.load('LoanBankShort/model_log_short.pkl')
+
 loan_router = APIRouter(prefix="/loan", tags=["Loan Approval"])
 
 
