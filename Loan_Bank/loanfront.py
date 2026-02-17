@@ -40,7 +40,7 @@ if st.button('Check result'):
         answer = requests.post(api_url, json=client_data, timeout=10)
         if answer.status_code == 200:
             result = answer.json()
-            st.success(f"Response: {result.get('answer')}")
+            st.success(f"Response: {result.get('Message')}")
         else:
             st.error(f'Server responded with {answer.status_code}')
     except requests.exceptions.RequestException:

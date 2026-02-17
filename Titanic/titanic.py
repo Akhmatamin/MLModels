@@ -16,7 +16,7 @@ class TitanicSchema(BaseModel):
     Fare: float
     Embarked: str
 
-@titanic.post("/")
+@titanic.post("/predict")
 async def predict(schema: TitanicSchema):
     data = schema.dict()
 
