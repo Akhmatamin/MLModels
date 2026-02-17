@@ -5,7 +5,7 @@ import joblib
 scaler = joblib.load('Loan_Bank/scalerLoan.pkl')
 model = joblib.load('Loan_Bank/modelLoan.pkl')
 
-loan_long_rout = APIRouter(prefix='/loanpredict', tags=['LoanModel'])
+loan_long_rout = APIRouter(prefix='/credit', tags=['LoanModel'])
 
 
 
@@ -57,3 +57,18 @@ async def predict(schema: LoanData):
 
 
 
+# {
+#   "person_age": 0,
+#   "person_gender": "string",
+#   "person_income": 0,
+#   "person_emp_exp": 0,
+#   "loan_amnt": 0,
+#   "loan_int_rate": 0,
+#   "loan_percent_income": 0,
+#   "cb_person_cred_hist_length": 0,
+#   "credit_score": 0,
+#   "previous_loan_defaults_on_file": "string",
+#   "person_education": "string",
+#   "person_home_ownership": "string",
+#   "loan_intent": "string"
+# }
