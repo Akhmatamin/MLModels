@@ -36,7 +36,7 @@ class MushroomSchema(BaseModel):
     habitat: str
 
 CAP_SHAPE = ("c", "f", "k", "s", "x")
-CAP_SURFACE = ("g", "s", "y")
+CAP_SURFACE = ("c", "f", "k", "s", "x")
 CAP_COLOR = ("c", "e", "g", "n", "p", "r", "u", "w", "y")
 BRUISES = ("t",)
 ODOR = ("c", "f", "l", "m", "n", "p", "s", "y")
